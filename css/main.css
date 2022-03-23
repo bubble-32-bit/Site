@@ -1525,6 +1525,9 @@ html,body {
 	.btn-form {
 		width: 360px;
 	}
+	#cursor, #aura {
+		display: none;
+	}
 }
 
 
@@ -1595,3 +1598,8 @@ html,body {
 ::selection {background: #FFD6CC;}
 ::-moz-selection {background: #FFD6CC;}
 ::-webkit-selection {background: #FFD6CC; color:#FFD6CC;}
+
+.wrapper2 {
+	padding: 20px 0;
+	text-align: center;
+}
