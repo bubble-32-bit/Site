@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Блог</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="shortcut icon" href="img/logoicon 1.svg" type="image/x-icon">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<div id="cursor"></div>
+	<div id="aura"></div>
+	<header class="header">
+		<div class="container">
+			<div class="nav">
+				<a href="index.html" class="logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+				 <div class="wrapper">
+         <ul class="menu">
+            <li class="menu_item"><a href="about.html">О нас</a></li>
+            <li class="menu_item"><a href="questions.html">Вопросы</a></li>
+            <li class="menu_item"><a href="blog.html">Блог</a></li>
+            <li class="menu_item"><a href="contacts.html">Контакты</a></li>
+         </ul>
+      </div>
+      <div class="koko">
+      	<a href="#" class="numer">+380 435-746-887</a>
+      </div>
+      <div class="button menu-open"></div>
+			</div>
+		</div>
+	</header>
+	<section class="blog">
+		<div class="container">
+			<div class="all-blog" data-aos="fade-left">
+				<div class="blog-name">Блог</div>
+			<div class="blog-title">Семья как система</div>
+			<p class="author">Автор: Антон Ольховик (под редакцией Тины Вахрамянц), 13 марта</p>
+			<div class="blog-pic"></div>
+			<p class="blog-intro">Почему проблема одного члена семьи — это проблема всей семьи? Может ли ребенок заболеть из-за того, что родители плохо ладят? Почему семейная система может «сопротивляться» изменениям в вашей жизни? Отвечаем на эти вопросы с позиций системной семейной психотерапии.</p>
+		</div>
+		<div class="all-blog" data-aos="fade-right">
+			<div class="blog-title blog-title2">Расщепление: почему оно возникает сейчас?</div>
+			<p class="author">Автор: Марина Волкова, 13 марта</p>
+			<div class="blog-pic2"></div>
+			<p class="blog-intro">Почему в ситуациях сильного стресса некоторые из нас делят мир на «черное» и «белое»? Какая психологическая защита за этим стоит?</p>
+		</div>
+		<div class="all-blog2" data-aos="fade-up">
+			<div class="blog-title">Почему люди изменяют?</div>
+			<p class="author">Автор: Марина Волкова, 2 февраля</p>
+			<div class="blog-pic3"></div>
+			<p class="blog-intro">Измену принято осуждать и трудно принять — но можно понять, что заставляет человека искать отношения на стороне. Изменяя, мы бессознательно пытаемся сформировать треугольник отношений, который будет более устойчив, чем отношения в диаде. И в этом смысле измена — способ сохранять отношения с партнером, ничего в них не меняя, избегая открытой конфронтации и признания того, что отношения проходят через кризис. Разбираемся, как именно происходят эти процессы.</p>
+		</div>
+			</div>
+	</section>
+	<footer class="footer_back" data-aos="zoom-in">
+		<div class="container">
+			<div class="all_infof">
+					<div class="log_info">
+				<div class="footer_logo"></div>
+			<div class="footer_info">
+				<p class="foot_info">По вопросам записи, оплаты,
+техническим трудностям
+(с 10.00 до 22.00 ежедневно):
+support@psy.pro</p>
+<p class="foot_info1">По вопросам сотрудничества, регистрации, подбора:
+info@psy.pro</p>
+</div>
+			</div>
+			<div class="foot_links">
+				<a href="#" class="flink">Бесплатная психологическая помощь
+</a>
+<a href="#" class="flink">Реквизиты компании и порядок оплаты
+
+</a>
+<a href="#" class="flink">FAQ
+
+</a>
+<a href="#" class="flink">Контакты
+</a>
+			</div>
+			<div class="foot_links">
+				<a href="#" class="flink">Политика конфиденциальности
+
+</a>
+<a href="#" class="flink">Обработка персональных данных
+
+
+</a>
+<a href="#" class="flink">Пользовательское соглашениe
+
+
+</a>
+<a href="#" class="flink">Открытые дни
+</a>
+			</div>
+			<div class="iconinfo">
+				<div class="icons_info">
+					<div class="inst"></div>
+					<div class="fb"></div>
+					<div class="twitter"></div>
+				</div>
+					<div class="info">© 2020–2022 psy.pro</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/app.min.js"></script>
+<script>
+   AOS.init({
+   	duration: 1500
+   });
+   $(function () {
+  	$('.menu-open').click(function () {
+	$('.menu').toggleClass('show-menu')
+	$('.wrapper').toggleClass('show-menu')
+	$('.menu-open').toggleClass('close-menu')
+  	})
+  });
+</script>
+</html>
