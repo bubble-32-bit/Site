@@ -13,10 +13,11 @@
 <body>
 	<div id="cursor"></div>
 	<div id="aura"></div>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<nav class="nav">
-				<a href="index.html" class="logo">
+				<div class="navbar-container">
+					<a href="index.html" class="logo">
 					<img src="img/logo.svg" alt="logo">
 				</a>
 				 <div class="wrapper">
@@ -30,8 +31,12 @@
       <div class="koko">
       	<a href="#" class="numer">+380 435-746-887</a>
       </div>
-       <div class="button menu-open"></div>
+      <div class="button menu-open"></div>
+				</div>
 			</nav>
+		</div>
+	</header>
+	
 			<div class="offer_about"  data-aos="fade-right">
 				<div class="abt_title">
 						О нас
@@ -118,6 +123,24 @@ info@psy.pro</p>
 	$('.wrapper').toggleClass('show-menu')
 	$('.menu-open').toggleClass('close-menu')
   	})
+  });
+
+   var height = $('#header').height();
+
+  $(window).scroll(function () {
+  	if($(this).scrollTop() > height) {
+  		$('.nav').addClass('fixed');
+  	}else{
+  		$('.nav').removeClass('fixed');
+  	}
+  });
+
+  document.addEventListener("visibilitychange", () => {
+  	if (document.visibilityState === "hidden") {
+  		document.title = "Куда съебался?"
+  	} else {
+  		document.title = "О нас"
+  	}
   });
 </script>
 </html>
